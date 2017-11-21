@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Basic', sans-serif;
+}
+main{
+	width: 90%;
+}
+
+#barra{
+	display: flex;
+	background: #704884;
+	width: 100%;
+	height: 60px;
+}
+
+#nomes{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#brmenu{
+	display: flex;
+	background: green;
+	width: 100%;
+	height: 40px;
+}
+
+
+#btn{
+	background: none;
+	border: 0;
+	outline: none;
+	position: absolute;
+	left: 15px;
+	top: 2px;
+}
+
+#slogan{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 80%;
+}
+
+
+#btn,
+#icon{
+	width: 30px;
+	height: 30px;
+	margin-top: 7px;
+}
+
+#monte{ 
+	background: #f44e4e ;
+	border: 0;
+	outline: none;
+	width: 36%;
+	height: 58px;
+	border-radius: 6px;
+	color: white;
+	display: flex;
+}
+
+#nm-btn{
+	display: flex;
+	text-align: center;
+	font-size: 20px;
+}
+
+nav{
+	background: #474747;
+	height: 130px;
+	display: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li{
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#lin1,
+#lin2,
+#lin3,
+#lin4,
+#lin5,
+#lin6{
+	background: #bbb;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+}
+
+#lin1{
+	top: 82px;
+}
+
+#lin2{
+	top: 107px;
+}
+
+#lin3{
+	top: 132px;
+}
+
+#lin4{
+	top: 156px;
+}
+
+#lin6{
+	top: 182px;
+	height: 8px;
+	background: white;
+}
+
+#menu{
+	display: none;
+}
+#clickimg{
+	width: 150px;
+	height: 150px;
+}
+
+.card{
+	display: block;
+	flex-direction: row;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	width: 150px;
+ 	text-align: center;
+ 	margin-left: 8px;
+ 	margin-right: 8px;
+ 	margin-bottom: 8px;
+ 	margin-top: 8px;2
+}
+
+#gl-pg{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.imgss{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+ 	justify-content: center;
+}
+
+@media screen and (min-width: 610px){
+	
+	#menu{
+		display: block;
+	}
+	#btn,
+	#icon{
+		display: none;
+	}
+
+
+	#lin2,
+	#lin3,
+	#lin4,
+	#lin6{
+		display: none;
+	}
+	nav{
+		height: 35px;
+	}
+
+	#lin1{
+	top: 94px;
+	}	
+
+	a{
+		display: block;
+	
+	}
+
+	li{
+		margin-bottom: 0;
+	}
+
+	ul{
+		display: flex;
+		flex: 1;
+		list-style: none;  
+  		justify-content: flex-end;
+  		align-items: center;
+  		position: relative;
+  		top: 8px;
+	}
+
+}

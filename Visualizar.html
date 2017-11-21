@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="js/carrinho.js"></script>
+	<script type="text/javascript" src="js/cupcake.js"></script>
+	<link rel="stylesheet" href="css/visus.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+	<h1 id="cabecalho">CRAZYCAKES</h1>
+	<div id="sombra2"></div>
+	<h2 id="sub_av">Seu CupCake está pronto!!!</h2>
+
+	<div id="esconde_td">
+		<label id="lb_mass">
+		Massa
+		<input type="text" id="massa" disabled="disabled" class="caixas">
+		</label></br>
+
+		<label id="lb_rch">
+		Recheio
+		<input type="text" id="recheio" disabled="disabled" class="caixas">
+		</label></br>
+
+		<label id="lb_cbr">
+		Cobertura
+		<input type="text" id="cobertura" disabled="disabled" class="caixas">
+		</label></br>
+	</div>
+	
+	<input type="button" id="view" onclick="most('esconde_td')" value="Ver CupCake" />
+
+	<div id="cmp_btn">
+		<input type="button"  id="buy" value="Comprar"onclick="compra()">
+	</div>
+
+	<p><a href="Escolha.html">Voltar</a></p>
+
+</body>
+</html>
