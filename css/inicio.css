@@ -154,7 +154,7 @@ li{
  	justify-content: center;
 }
 
-@media screen and (min-width: 610px){
+@media screen and (min-width: 410px){
 	
 	#menu{
 		display: block;
