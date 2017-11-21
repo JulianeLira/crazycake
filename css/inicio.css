@@ -124,7 +124,8 @@ li{
 #menu{
 	display: none;
 }
-#clickimg{
+#clickimg,
+#foto{
 	width: 200px;
 	height: 200px;
 }
