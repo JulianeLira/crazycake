@@ -125,15 +125,15 @@ li{
 	display: none;
 }
 #clickimg{
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 }
 
 .card{
 	display: block;
 	flex-direction: row;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  	width: 150px;
+  	width: 200px;
  	text-align: center;
  	margin-left: 8px;
  	margin-right: 8px;
