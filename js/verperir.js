@@ -31,7 +31,7 @@ var cup10 = new vermaior("CupCake IceCream","ck/cup10.jpg","Massa de Baunilha, C
 var cup11 = new vermaior("CupCake RosePink","ck/cup11.jpg","Massa de Chocolate, Cobertura de Chantilly (morango), Recheio de Morango e Enfeite de uma Flor");
 var cup12 = new vermaior("CupCake BananaLove","ck/cup12.jpg","Massa de Banana, Cobertura de Creme (banana), Recheio de Creme e Enfeite de Coração");
 var cup13 = new vermaior("CupCake Strawberry","ck/cup13.jpg","Massa de Baunilha, Cobertura de Creme (morango), Recheio de Morango e Enfeite de bolinhas prateadas");
-var cup14 = new vermaior("CupCake PurpleCream","ck/cup14.jpg",);
+var cup14 = new vermaior("CupCake PurpleCream","ck/cup14.jpg","Massa de Baunilha, Cobertura de Blueberry, Recheio de Creme e Enfeites de Coração e Granulado");
 var cup15 = new vermaior("CupCake Unicorn","ck/cup15.jpg","Massa de Baunilha, Cobertura de Caramelo e Creme (morango), Recheio de Morango e Enfeite de boneco de Unicórnio de Açucar");
 var cup16 = new vermaior("CupCake ChocoDrop","ck/cup16.jpg","Massa de Chocolate, Cobertura de Chocolate, Recheio de Chocolate e Enfeite de Gotas de Chocolate");
 var cup17 = new vermaior("CupCake Neapolitan","ck/cup17.jpg","Massa de Baunilha, Cobertura de Creme (chocolate, morango e baunilha), Recheio de Creme e Enfeite de Bolacha e Cereja");
@@ -64,30 +64,29 @@ sla.push(cup1, cup2, cup3, cup4, cup5, cup6, cup7, cup8, cup9,
 for(var i = 0; i < sla.length; i++){
 
 	var divs = document.createElement("div");
-	divs.class = "cards";
+	divs.setAttribute("class", "cards");
 
 	var as = document.createElement("a");
-	as.id = "clickimg";
+	as.setAttribute("id", "clickimg");
 	
 	var fots = document.createElement("img");
-	fots.id = "foto";
+	fots.setAttribute("id", "foto");
 	fots.src = sla[i].foto;
 
 	var hs = document.createElement("h3");
-	hs.id = "cknome"
+	hs.setAttribute("id", "cknome");
 	hs.innerHTML = sla[i].title;
 
 	var leg = document.createElement("legend");
-	leg.id = "desc";
+	leg.setAttribute("id", "desc");
 	leg.innerHTML = sla[i].legenda;
 
 	as.appendChild(fots);
 	divs.appendChild(as);
 	divs.appendChild(hs);
 	divs.appendChild(leg);
+    document.querySelector("#imgis").appendChild(divs);
 
-	var recebe = document.querySelector("imgis");
-	recebe.appendChild(divs);
 
 
 

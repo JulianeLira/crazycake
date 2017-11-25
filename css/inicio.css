@@ -131,11 +131,12 @@ li{
 	height: 200px;
 }
 
-.card{
+.cards{
 	display: block;
 	flex-direction: row;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	width: 200px;
+  	height: 320px;
  	text-align: center;
  	margin-left: 10px;
  	margin-right: 10px;
@@ -146,6 +147,8 @@ li{
 #desc{
 	margin-left: 5px;
 	margin-right: 5px;
+	font-size: 14px;
+	color: #777777;
 }
 
 #gl-pg{
@@ -154,7 +157,7 @@ li{
 	margin-bottom: 20px;
 }
 
-.imgss{
+.imgis{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
