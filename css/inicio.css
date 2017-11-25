@@ -160,6 +160,106 @@ li{
  	justify-content: center;
 }
 
+
+/*#inf{
+	background: #ededed;
+	position: fixed;
+	top: 20px;
+	left: 0px;
+	right: 0px;
+	width: 90%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#name,
+#descri{
+	text-align: center;
+}
+
+#name{
+	margin-bottom: 20px;
+}
+
+#ref,
+#enco{
+	display: flex;
+}
+
+#enco{
+	display: flex;
+	justify-content: center;
+	background: #f44e4e;
+	border: none;
+	outline: none;
+	border-radius: 6px; 
+	width: 60%;
+	height: 40px;
+	font-size: 15px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+
+#btnn{
+	display: flex;
+	justify-content: center;
+	background: #f44e4e;
+	border: none;
+	outline: none;
+	border-radius: 6px; 
+	width: 30%;
+	height: 40px;
+	font-size: 15px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#ref{
+	width: 30%;
+	height: 30%;
+	margin-bottom: 30px;
+	border-radius: 7px;
+}
+
+#descri{
+	margin-bottom: 10px;
+}
+
+#registro{
+	display: flex;
+	flex-direction: column;
+}
+
+.qua,
+.nom,
+.cpfd,
+.tle{
+	display: flex;
+	flex-direction: column;
+}
+
+#nm,
+#cpf,
+#tele{
+	height: 24px;
+}
+
+#tele{
+	margin-bottom: 10px;
+}
+
+label{
+	text-align: left;
+}
+
+#nmr{
+	width: 40px;
+}
+*/
+
+
+
 @media screen and (min-width: 610px){
 	
 	#menu{
@@ -203,5 +303,16 @@ li{
   		position: relative;
   		top: 8px;
 	}
+
+	/*#inf{
+		width: 30%;
+		left: 0;
+		right: 0;
+	}
+
+	#ref{
+		width:45%;
+		height:45%;
+	}*/
 
 }
