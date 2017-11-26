@@ -4,17 +4,6 @@ class vermaior{
 		this.foto = foto;
 		this.legenda = legenda;
 	}
-
-	getTitle(){
-		return this.title;
-
-	}
-	getFoto(){
-		return this.foto;
-	}
-	getLegenda(){
-		return this.legenda;
-	}
 }
 
 
@@ -87,7 +76,116 @@ for(var i = 0; i < sla.length; i++){
 	divs.appendChild(leg);
     document.querySelector("#imgis").appendChild(divs);
 
-
-
-
 }
+
+
+for(var i = 0; i < sla.length; i++){
+
+	var nm = document.createElement("h1");
+	nm.setAttribute("id","name");
+	nm.innerHTML = sla[i].title;
+
+	var imgs = document.createElement("img");
+	imgs.setAttribute("id","ref");
+	imgs.src = sla[i].foto;
+
+	var fala = document.createElement("legend");
+	fala.setAttribute("id","descri");
+	fala.innerHTML = sla[i].legenda;
+
+
+
+
+	var registro = document.createElement("div");
+	registro.setAttribute("id","registro");
+
+
+	var  res = document.createElement("div");
+	res.setAttribute("class","qua");
+
+	var quan = document.createElement("div");
+	quan.setAttribute("class","nom");
+
+	var cpfs = document.createElement("div");
+	quan.setAttribute("class","cpfd");
+
+	var tel = document.createElement("div");
+	quan.setAttribute("class","tle");
+
+
+
+	var indicador1 = document.createElement("label");
+	indicador1.innerHTML = "Quantidade: ";
+
+	var indicador2 = document.createElement("label");
+	indicador2.innerHTML = "Nome: ";
+
+	var indicador3 = document.createElement("label");
+	indicador3.innerHTML = "CPF: ";
+
+	var indicador4 = document.createElement("label");
+	indicador4.innerHTML = "Tel: ";
+
+
+
+	var nmr_quant= document.createElement("input");
+	nmr_quant.setAttribute("type","number");
+	nmr_quant.setAttribute("id","nmr");
+	nmr_quant.setAttribute("name","quants");
+	nmr_quant.setAttribute("class","qua");
+	
+	var noms = document.createElement("input");
+	noms.setAttribute("type","text");
+	noms.setAttribute("id","nm");
+	noms.setAttribute("name","nomeacao");
+	noms.setAttribute("placeholder","Digite seu nome completo");
+	noms.setAttribute("class","nom");
+
+	var get_cpf = document.createElement("input");
+	get_cpf.setAttribute("type","number");
+	get_cpf.setAttribute("id","cpf");
+	get_cpf.setAttribute("name","cpfs");
+	get_cpf.setAttribute("placeholder","Digite seu CPF");
+	get_cpf.setAttribute("class","cpfd")
+
+	var telefone = document.createElement("input");
+	telefone.setAttribute("type","number");
+	telefone.setAttribute("id","tele");
+	telefone.setAttribute("name","telefone");
+	telefone.setAttribute("placeholder","Digite seu Telefone");
+	telefone.setAttribute("class","tle")
+
+
+	var pedir = document.createElement("input");
+	pedir.setAttribute("type","button");
+	pedir.setAttribute("name","mandar");
+	pedir.setAttribute("id","btnn");
+	pedir.setAttribute("value","PEDIR");
+
+
+
+	registro.appendChild(res);
+	registro.appendChild(quan);
+	registro.appendChild(cpfs);
+	registro.appendChild(tel);
+	registro.appendChild(pedir);
+
+	res.appendChild(indicador1);
+	res.appendChild(nmr_quant);
+
+	quan.appendChild(indicador2);
+	quan.appendChild(noms);
+
+	cpfs.appendChild(indicador3);
+	cpfs.appendChild(get_cpf);
+
+	tel.appendChild(indicador4);
+	tel.appendChild(telefone);
+
+	var entrada = document.querySelector("#inf");
+	entrada.appendChild(nm);
+	entrada.appendChild(imgs);
+	entrada.appendChild(fala);
+	entrada.appendChild(registro);
+}
+

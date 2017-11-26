@@ -165,7 +165,8 @@ li{
 }
 
 
-/*#inf{
+#inf{
+	display: none; 
 	background: #ededed;
 	position: fixed;
 	top: 20px;
@@ -235,13 +236,6 @@ li{
 	flex-direction: column;
 }
 
-.qua,
-.nom,
-.cpfd,
-.tle{
-	display: flex;
-	flex-direction: column;
-}
 
 #nm,
 #cpf,
@@ -252,15 +246,32 @@ li{
 #tele{
 	margin-bottom: 10px;
 }
-
 label{
-	text-align: left;
+	display: flex;
+	flex-direction: left;
 }
 
 #nmr{
 	width: 40px;
 }
-*/
+
+
+#tit{
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+#logo{
+	display: flex;
+	width: 40%;
+	height: 40%;
+}
+
+#sobre-pg{
+	text-align: justify;
+}
+
 
 
 
@@ -308,8 +319,8 @@ label{
   		top: 8px;
 	}
 
-	/*#inf{
-		width: 30%;
+	#inf{
+		width: 40%;
 		left: 0;
 		right: 0;
 	}
@@ -317,6 +328,6 @@ label{
 	#ref{
 		width:45%;
 		height:45%;
-	}*/
+	}
 
 }
