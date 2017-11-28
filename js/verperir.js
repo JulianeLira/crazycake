@@ -195,7 +195,8 @@ for(var i = 0; i < sla.length; i++){
 
 function pegar(){
 	document.querySelector('#card').onclick = function(evt){
-	console.log(evt.target.dataset);
+	evt.target.dataset = console.log(sla[i]);
+	
 	}
 }
 
