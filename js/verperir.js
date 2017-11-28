@@ -54,6 +54,8 @@ for(var i = 0; i < sla.length; i++){
 
 	var divs = document.createElement("div");
 	divs.setAttribute("class", "cards");
+	divs.setAttribute("id", "card");
+
 
 	var as = document.createElement("a");
 	as.setAttribute("id", "clickimg");
@@ -192,7 +194,7 @@ for(var i = 0; i < sla.length; i++){
 }
 
 function pegar(){
-	document.querySelector('#clickimg').onclick = function(evt){
+	document.querySelector('#card').onclick = function(evt){
 	console.log(evt.target.dataset);
 	}
 }
