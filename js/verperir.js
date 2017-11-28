@@ -192,7 +192,7 @@ for(var i = 0; i < sla.length; i++){
 }
 
 function pegar(){
-	var manda = document.querySelector('#clickimg').onclick = function(evt){
+	document.querySelector('#clickimg').onclick = function(evt){
 	evt.target.dataset = alert("este");
 	}
 }
