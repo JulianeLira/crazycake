@@ -57,6 +57,8 @@ for(var i = 0; i < sla.length; i++){
 
 	var as = document.createElement("a");
 	as.setAttribute("id", "clickimg");
+	as.setAttribute("data-name","bolin");
+	as.setAttribute("onclick","pegar()")
 	
 	var fots = document.createElement("img");
 	fots.setAttribute("id", "foto");
@@ -187,5 +189,13 @@ for(var i = 0; i < sla.length; i++){
 	entrada.appendChild(imgs);
 	entrada.appendChild(fala);
 	entrada.appendChild(registro);
+}
+
+function pegar(){
+	var manda = document.querySelector('').onclick = function(evt){
+	evt.target.dataset;
+	alert("este");
+		
+	}
 }
 
