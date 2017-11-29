@@ -165,8 +165,7 @@ li{
 }
 
 
-#inf{
-	display: none; 
+#inf{ 
 	background: #ededed;
 	position: fixed;
 	top: 20px;
