@@ -55,12 +55,20 @@ for(var i = 0; i < sla.length; i++){
 
 	var divs = document.createElement("div");
 	divs.setAttribute("class", "cards");
+	divs.setAttribute("id", "card");
+
 
 	var as = document.createElement("a");
 	as.setAttribute("id", "clickimg");
+<<<<<<< HEAD
 	as.setAttribute("date-name","bolin");
 	as.setAttribute("onclick","abastece("+i+")");
 	 
+=======
+	as.setAttribute("data-name","bolin");
+	as.setAttribute("onclick","pegar()")
+	
+>>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 	var fots = document.createElement("img");
 	fots.setAttribute("id", "foto");
 	fots.src = sla[i].foto;
@@ -229,5 +237,14 @@ function fechar(x){
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+function pegar(){
+	document.querySelector('#card').onclick = function(evt){
+	evt.target.dataset = console.log(sla[i]);
+	
+	}
+}
+>>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 

@@ -166,8 +166,12 @@ li{
 }
 
 
+<<<<<<< HEAD
 #inf{
 	display: none;
+=======
+#inf{ 
+>>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 	background: #ededed;
 	position: fixed;
 	top: 20px;
