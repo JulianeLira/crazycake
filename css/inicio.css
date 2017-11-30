@@ -132,6 +132,7 @@ li{
 }
 
 .cards{
+	background: white;
 	display: block;
 	flex-direction: row;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -166,7 +167,7 @@ li{
 
 
 #inf{
-	display: none; 
+	display: none;
 	background: #ededed;
 	position: fixed;
 	top: 20px;
@@ -272,8 +273,36 @@ label{
 	text-align: justify;
 }
 
+#linha{
+	background: #3d3c3c;
+	display: flex;
+	width: 25%;
+	height: 5px;
+	margin-top: -16px;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
 
+#escolha{
+	display: none;
+}
+#sobre{
+	display: none;
+}
 
+#home{
+	display: block;
+}
+
+#close{
+	font-size: 	20px;
+	border: none;
+	border-radius:	50px;
+	width: 30px;
+	height: 30px;
+	background: black;
+	color: white;
+}
 
 @media screen and (min-width: 610px){
 	
@@ -328,6 +357,18 @@ label{
 	#ref{
 		width:45%;
 		height:45%;
+	}
+
+	#logo{
+		width: 24%;
+	}
+
+	#sobre-pg{
+		width:70%
+	}
+
+	#linha{
+		width: 15%;
 	}
 
 }

@@ -1,4 +1,5 @@
-class vermaior{
+
+	class vermaior{
 	constructor(title,foto,legenda){
 		this.title = title;
 		this.foto = foto;
@@ -36,7 +37,7 @@ var cup26 = new vermaior("CupCake VanillaCream","ck/cup26.jpg","Massa de Baunilh
 var cup27 = new vermaior("CupCake Caramel","ck/cup27.jpg","Massa de Caramelo, Cobertura de Caramelo e Recheio de Caramelo");
 var cup28 = new vermaior("CupCake Açai ","ck/cup28.jpg","Massa de Chocolate, Cobertura de Açai, Recheio de Açai e Enfeite de Granulado");
 var cup29 = new vermaior("CupCake ChocoChantilly","ck/cup29.jpg","Massa de Chocolate, Cobertura de Chantilly, Recheio de Chocolate e Enfeite de Calda de Chocolate");
-var cup30 = new vermaior("CupCake Papaya","ck/cup30.jpg","Massa de, Cobertura de, Recheio de e");
+var cup30 = new vermaior("CupCake BananaCrumble","ck/cup30.jpg","Massa de Banana, Cobertura de Nutella, Recheio de Doce de Leite e Enfeite de Gotas de Chocolate");
 var cup31 = new vermaior("CupCake BananaChoco","ck/cup31.jpg","Massa de Banana, Cobertura de Banana e Caramelo e Recheio de Chocolate");
 var cup32 = new vermaior("CupCake BananaCream","ck/cup32.jpg","Massa de Banana, Cobertura de Creme com Chocolate, Recheio de Banana");
 var cup33 = new vermaior("CupCake LoveRose","ck/cup33.jpg","Massa de Baunilha, Cobertura de Creme, Recheio de Creme e Endeite de Flor");
@@ -57,7 +58,9 @@ for(var i = 0; i < sla.length; i++){
 
 	var as = document.createElement("a");
 	as.setAttribute("id", "clickimg");
-	
+	as.setAttribute("date-name","bolin");
+	as.setAttribute("onclick","abastece("+i+")");
+	 
 	var fots = document.createElement("img");
 	fots.setAttribute("id", "foto");
 	fots.src = sla[i].foto;
@@ -79,113 +82,152 @@ for(var i = 0; i < sla.length; i++){
 }
 
 
-for(var i = 0; i < sla.length; i++){
 
-	var nm = document.createElement("h1");
-	nm.setAttribute("id","name");
-	nm.innerHTML = sla[i].title;
+function abastece(x){
 
-	var imgs = document.createElement("img");
-	imgs.setAttribute("id","ref");
-	imgs.src = sla[i].foto;
-
-	var fala = document.createElement("legend");
-	fala.setAttribute("id","descri");
-	fala.innerHTML = sla[i].legenda;
+	document.querySelector("#inf").style.display = "block";
+	let valores = 4.00;
 
 
+	for(var i = 0; i < 1; i++){
 
+		var closes = document.createElement("button");
+		closes.setAttribute("id","close");
+		closes.innerHTML = "X";
+		closes.setAttribute("onclick","fechar()");
 
-	var registro = document.createElement("div");
-	registro.setAttribute("id","registro");
+		var nm = document.createElement("h1");
+		nm.setAttribute("id","name");
+		nm.innerHTML = sla[x].title;
 
+		var imgs = document.createElement("img");
+		imgs.setAttribute("id","ref");
+		imgs.src = sla[x].foto;
 
-	var  res = document.createElement("div");
-	res.setAttribute("class","qua");
-
-	var quan = document.createElement("div");
-	quan.setAttribute("class","nom");
-
-	var cpfs = document.createElement("div");
-	quan.setAttribute("class","cpfd");
-
-	var tel = document.createElement("div");
-	quan.setAttribute("class","tle");
+		var fala = document.createElement("legend");
+		fala.setAttribute("id","descri");
+		fala.innerHTML = sla[x].legenda;
 
 
 
-	var indicador1 = document.createElement("label");
-	indicador1.innerHTML = "Quantidade: ";
 
-	var indicador2 = document.createElement("label");
-	indicador2.innerHTML = "Nome: ";
-
-	var indicador3 = document.createElement("label");
-	indicador3.innerHTML = "CPF: ";
-
-	var indicador4 = document.createElement("label");
-	indicador4.innerHTML = "Tel: ";
+		var registro = document.createElement("div");
+		registro.setAttribute("id","registro");
 
 
+		var  res = document.createElement("div");
+		res.setAttribute("class","qua");
 
-	var nmr_quant= document.createElement("input");
-	nmr_quant.setAttribute("type","number");
-	nmr_quant.setAttribute("id","nmr");
-	nmr_quant.setAttribute("name","quants");
-	nmr_quant.setAttribute("class","qua");
-	
-	var noms = document.createElement("input");
-	noms.setAttribute("type","text");
-	noms.setAttribute("id","nm");
-	noms.setAttribute("name","nomeacao");
-	noms.setAttribute("placeholder","Digite seu nome completo");
-	noms.setAttribute("class","nom");
+		var quan = document.createElement("div");
+		quan.setAttribute("class","nom");
 
-	var get_cpf = document.createElement("input");
-	get_cpf.setAttribute("type","number");
-	get_cpf.setAttribute("id","cpf");
-	get_cpf.setAttribute("name","cpfs");
-	get_cpf.setAttribute("placeholder","Digite seu CPF");
-	get_cpf.setAttribute("class","cpfd")
+		var cpfs = document.createElement("div");
+		quan.setAttribute("class","cpfd");
 
-	var telefone = document.createElement("input");
-	telefone.setAttribute("type","number");
-	telefone.setAttribute("id","tele");
-	telefone.setAttribute("name","telefone");
-	telefone.setAttribute("placeholder","Digite seu Telefone");
-	telefone.setAttribute("class","tle")
-
-
-	var pedir = document.createElement("input");
-	pedir.setAttribute("type","button");
-	pedir.setAttribute("name","mandar");
-	pedir.setAttribute("id","btnn");
-	pedir.setAttribute("value","PEDIR");
+		var tel = document.createElement("div");
+		quan.setAttribute("class","tle");
 
 
 
-	registro.appendChild(res);
-	registro.appendChild(quan);
-	registro.appendChild(cpfs);
-	registro.appendChild(tel);
-	registro.appendChild(pedir);
+		var indicador1 = document.createElement("label");
+		indicador1.innerHTML = "Quantidade: ";
 
-	res.appendChild(indicador1);
-	res.appendChild(nmr_quant);
+		var indicador2 = document.createElement("label");
+		indicador2.innerHTML = "Nome: ";
 
-	quan.appendChild(indicador2);
-	quan.appendChild(noms);
+		var indicador3 = document.createElement("label");
+		indicador3.innerHTML = "CPF: ";
 
-	cpfs.appendChild(indicador3);
-	cpfs.appendChild(get_cpf);
+		var indicador4 = document.createElement("label");
+		indicador4.innerHTML = "Tel: ";
 
-	tel.appendChild(indicador4);
-	tel.appendChild(telefone);
 
-	var entrada = document.querySelector("#inf");
-	entrada.appendChild(nm);
-	entrada.appendChild(imgs);
-	entrada.appendChild(fala);
-	entrada.appendChild(registro);
+
+		var nmr_quant= document.createElement("input");
+		nmr_quant.setAttribute("type","number");
+		nmr_quant.setAttribute("id","nmr");
+		nmr_quant.setAttribute("name","quants");
+		nmr_quant.setAttribute("class","qua");
+		
+		var noms = document.createElement("input");
+		noms.setAttribute("type","text");
+		noms.setAttribute("id","nm");
+		noms.setAttribute("name","nomeacao");
+		noms.setAttribute("placeholder","Digite seu nome completo");
+		noms.setAttribute("class","nom");
+
+		var get_cpf = document.createElement("input");
+		get_cpf.setAttribute("type","number");
+		get_cpf.setAttribute("id","cpf");
+		get_cpf.setAttribute("name","cpfs");
+		get_cpf.setAttribute("placeholder","Digite seu CPF");
+		get_cpf.setAttribute("class","cpfd")
+
+		var telefone = document.createElement("input");
+		telefone.setAttribute("type","number");
+		telefone.setAttribute("id","tele");
+		telefone.setAttribute("name","telefone");
+		telefone.setAttribute("placeholder","Digite seu Telefone");
+		telefone.setAttribute("class","tle")
+
+
+		var pedir = document.createElement("input");
+		pedir.setAttribute("type","button");
+		pedir.setAttribute("name","mandar");
+		pedir.setAttribute("id","btnn");
+		pedir.setAttribute("value","PEDIR");
+
+		var preco = document.createElement("p");
+		preco.setAttribute("id","mos_preco");
+		preco.innerHTML = "R$" +valores+"";
+
+
+
+		registro.appendChild(res);
+		registro.appendChild(quan);
+		registro.appendChild(cpfs);
+		registro.appendChild(tel);
+		registro.appendChild(pedir);
+
+		res.appendChild(indicador1);
+		res.appendChild(nmr_quant);
+
+		quan.appendChild(indicador2);
+		quan.appendChild(noms);
+
+		cpfs.appendChild(indicador3);
+		cpfs.appendChild(get_cpf);
+
+		tel.appendChild(indicador4);
+		tel.appendChild(telefone);
+
+		var entrada = document.querySelector("#inf");
+		entrada.appendChild(closes);
+		entrada.appendChild(nm);
+		entrada.appendChild(imgs);
+		entrada.appendChild(fala);
+		entrada.appendChild(registro);
+		entrada.appendChild(preco);	
+	}
 }
+
+
+
+
+
+function fechar(x){
+	let fecha = document.querySelector("#inf").style.display;
+
+	if (fecha == "block") {
+		document.querySelector("#inf").style.display = "none";
+		document.querySelector("#inf").innerHTML ="";	
+
+
+
+	}else{
+		document.querySelector("#inf").style.display = "block";
+	}
+}
+
+
 

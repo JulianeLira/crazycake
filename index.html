@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
 	<title>CRAZYCAKE</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
@@ -16,7 +17,6 @@
 				<button id="btn" onclick="abrir()"><img id="icon" src="imgs/icon-menu.png"></button>
 				<h1 id="nomes">CRAZYCAKE</h1>
 			</div>
-			<div id="sombra"></div>
 		</div>
 	</header>
 
@@ -28,10 +28,10 @@
 		<div id="lin5"></div>
 		<div id="lin6"></div>
 			<ul>
-				<li id="li1"><a href="#home">HOME</a></li>
-				<li id="li2"><a href="#galeria">GALERIA</a></li>
-				<li id="li3"><a href="Escolha.html">MONTAR CUPCAKE</a></li>
-				<li id="li4"><a href="#sobre" >SOBRE</a></li>
+				<li id="li1"><a onclick="esconde2()" href="#home">HOME</a></li>
+				<li id="li2"><a onclick="esconde()" href="#escolha">PEDIR CUPCAKE</a></li>
+				<li id="li3"><a href="#galeria">GALERIA</a></li>
+				<li id="li4"><a  onclick="esconde1()" href="#sobre" >SOBRE</a></li>
 				<li id="li5"><a href="#contatos">CONTATOS </a></li>
 			</ul>
 	</nav>
@@ -40,7 +40,7 @@
 
 		<div id="home">
 
-			<div class="slide">
+			<div class="slide" id="passa">
 				<img id="i1" src="imgs/cupcakes1.jpg" width="100%" height="20%">
 				<img id="i2" src="imgs/cupcakes2.png" width="100%" height="20%">
 				<img id="i3" src="imgs/cupcakes3.jpg" width="100%" height="20%">
@@ -52,11 +52,11 @@
 			<h1 id="slogan">Faça seu CupCake do sabor que imaginar e de forma simples !!!</h1>
 
 			<button id="monte" name="entrar" value="" onclick="montagem()"><p id="nm-btn">MONTAR CUPCAKE</p></button>
-
 		</div>
 
-		<div id="galeria">
-			<h1 id="gl-pg">GALERIA</h1>
+		<div id="escolha">
+			<h1 id="gl-pg">PEÇA SEU CUPCAKE</h1>
+			<div id="linha"></div>
 
 			<div id="imgis" class="imgis">
 			</div>
@@ -68,15 +68,26 @@
 		<div id="sobre">
 			
 			<h1 id="tit">Sobre</h1>
+			<div id="linha"></div>
 			<img id="logo" src="imgs/logo-site.png">
 
 			<p id="sobre-pg">Inaugurada em Julho de 2016, a Crazycake é Fruto da sociedade entre a administradora de empresas Juliane Lira e a chef Pedro Tommaselli, a loja oferece cupcakes artesanais produzidos diariamente. As massas são batidas a mão para garantir a textura fofa e úmida. Algumas receitas de família foram adaptadas para as forminhas de cupcakes, assim como o amor e dedicação. O objetivo principal é que os clientes ao saborearem as delícias da marca lembrem-se de coisas boas e receitas da infância ou da família. Oferece a possibilidade de personalizar os bolinhos de acordo com a ocasião desejada.</p>
 
 		</div>
 
+		<div id="contatos">
+			
+			<h1>Entre em Contato</h1>
 
+			<h3>Telefone: (67)3432-3824</h3>
+			<h3>E-mail: crazycake.vendas@gmail.com</h3>
 
-
+			<input type="text" id="nomeCont" placeholder="Nome..." name="">
+			<input type="text" id="emailCont" placeholder="E-mail..." name="">
+			<input type="number" id="telCont" placeholder="Telefone..." name="">
+			<input type="text" id="msgCont" placeholder="Mensagem..." name="">
+			<input type="button" id="enviaCont" name="" value="ENVIAR">
+		</div>
 	</main>
 	<script type="text/javascript" src="js/verperir.js"></script>
 </body>
