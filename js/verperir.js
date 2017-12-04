@@ -266,7 +266,7 @@ function mandar(){
 	let tel = document.querySelector("#tele").value;
 
 	if (!quantds,!nome,!tel) {
-		innerHTML = "Insira as Inforações";
+		innerHTML = "Por favor insira as Inforações";
 	}else{
 		innerHTML = nome+ " seu pedido foi enviado. \nApós o termino de seu pedido retornaremos um telefonema e enviaremos um email para que possa buscar em nossa Loja!!!";
 	}
