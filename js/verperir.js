@@ -1,5 +1,5 @@
 
-	class vermaior{
+class vermaior{
 	constructor(title,foto,legenda){
 		this.title = title;
 		this.foto = foto;
@@ -49,6 +49,9 @@ sla.push(cup1, cup2, cup3, cup4, cup5, cup6, cup7, cup8, cup9,
 		cup10, cup11, cup12, cup13, cup14, cup15, cup16, cup17,
 		cup18, cup19, cup20, cup21, cup22, cup23, cup24, cup25,
 		cup26, cup27, cup28, cup29, cup30, cup31, cup32, cup33);
+	
+
+
 
 
 for(var i = 0; i < sla.length; i++){
@@ -60,15 +63,12 @@ for(var i = 0; i < sla.length; i++){
 
 	var as = document.createElement("a");
 	as.setAttribute("id", "clickimg");
-<<<<<<< HEAD
+
 	as.setAttribute("date-name","bolin");
 	as.setAttribute("onclick","abastece("+i+")");
-	 
-=======
 	as.setAttribute("data-name","bolin");
-	as.setAttribute("onclick","pegar()")
+
 	
->>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 	var fots = document.createElement("img");
 	fots.setAttribute("id", "foto");
 	fots.src = sla[i].foto;
@@ -89,13 +89,12 @@ for(var i = 0; i < sla.length; i++){
 
 }
 
-
+let valores = 4.00;
 
 function abastece(x){
 
 	document.querySelector("#inf").style.display = "block";
-	let valores = 4.00;
-
+	
 
 	for(var i = 0; i < 1; i++){
 
@@ -139,12 +138,13 @@ function abastece(x){
 
 		var indicador1 = document.createElement("label");
 		indicador1.innerHTML = "Quantidade: ";
+		indicador1.setAttribute("id","ind1");
 
 		var indicador2 = document.createElement("label");
 		indicador2.innerHTML = "Nome: ";
 
 		var indicador3 = document.createElement("label");
-		indicador3.innerHTML = "CPF: ";
+		indicador3.innerHTML = "E-mail: ";
 
 		var indicador4 = document.createElement("label");
 		indicador4.innerHTML = "Tel: ";
@@ -156,6 +156,14 @@ function abastece(x){
 		nmr_quant.setAttribute("id","nmr");
 		nmr_quant.setAttribute("name","quants");
 		nmr_quant.setAttribute("class","qua");
+		nmr_quant.setAttribute("placeholder","1 un.");
+
+		var ver_preco = document.createElement("input");
+		ver_preco.setAttribute("type","button");
+		ver_preco.setAttribute("id","clac");
+		ver_preco.setAttribute("value","CALCULAR PREÇO");
+		ver_preco.setAttribute("onclick","altera()");
+
 		
 		var noms = document.createElement("input");
 		noms.setAttribute("type","text");
@@ -164,12 +172,12 @@ function abastece(x){
 		noms.setAttribute("placeholder","Digite seu nome completo");
 		noms.setAttribute("class","nom");
 
-		var get_cpf = document.createElement("input");
-		get_cpf.setAttribute("type","number");
-		get_cpf.setAttribute("id","cpf");
-		get_cpf.setAttribute("name","cpfs");
-		get_cpf.setAttribute("placeholder","Digite seu CPF");
-		get_cpf.setAttribute("class","cpfd")
+		var get_eml = document.createElement("input");
+		get_eml.setAttribute("type","text");
+		get_eml.setAttribute("id","cpf");
+		get_eml.setAttribute("name","cpfs");
+		get_eml.setAttribute("placeholder","Digite seu E-mail");
+		get_eml.setAttribute("class","cpfd")
 
 		var telefone = document.createElement("input");
 		telefone.setAttribute("type","number");
@@ -198,13 +206,15 @@ function abastece(x){
 		registro.appendChild(pedir);
 
 		res.appendChild(indicador1);
+		res.appendChild(preco);	
 		res.appendChild(nmr_quant);
+		res.appendChild(ver_preco);
 
 		quan.appendChild(indicador2);
 		quan.appendChild(noms);
 
 		cpfs.appendChild(indicador3);
-		cpfs.appendChild(get_cpf);
+		cpfs.appendChild(get_eml);
 
 		tel.appendChild(indicador4);
 		tel.appendChild(telefone);
@@ -215,12 +225,22 @@ function abastece(x){
 		entrada.appendChild(imgs);
 		entrada.appendChild(fala);
 		entrada.appendChild(registro);
-		entrada.appendChild(preco);	
+		
+
 	}
 }
 
+function altera(){
+	let valr_quant = document.querySelector("#nmr").value;
+	let mostpr = document.querySelector("#mos_preco");
 
+	if (valr_quant >= valores || valr_quant <= valores) {
+		mostpr.valores = valr_quant * valores;
+		mostpr.innerHTML = "R$" +mostpr.valores;
 
+		 
+	}
+}
 
 
 function fechar(x){
@@ -228,23 +248,9 @@ function fechar(x){
 
 	if (fecha == "block") {
 		document.querySelector("#inf").style.display = "none";
-		document.querySelector("#inf").innerHTML ="";	
-
-
-
+		document.querySelector("#inf").innerHTML ="";
 	}else{
 		document.querySelector("#inf").style.display = "block";
 	}
 }
-
-<<<<<<< HEAD
-
-=======
-function pegar(){
-	document.querySelector('#card').onclick = function(evt){
-	evt.target.dataset = console.log(sla[i]);
-	
-	}
-}
->>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 

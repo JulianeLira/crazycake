@@ -74,7 +74,7 @@ main{
 
 nav{
 	background: #474747;
-	height: 130px;
+	height: 96px;
 	display: none;
 }
 
@@ -116,11 +116,6 @@ li{
 	top: 156px;
 }
 
-#lin6{
-	top: 182px;
-	height: 8px;
-	background: white;
-}
 
 #menu{
 	display: none;
@@ -166,12 +161,11 @@ li{
 }
 
 
-<<<<<<< HEAD
+
 #inf{
 	display: none;
-=======
+}
 #inf{ 
->>>>>>> 088c1695ad70e6c910500edf1efcb185b9200914
 	background: #ededed;
 	position: fixed;
 	top: 20px;
@@ -287,6 +281,15 @@ label{
 	margin-bottom: 20px;
 }
 
+#linha2{
+	background: #3d3c3c;
+	display: flex;
+	width: 25%;
+	height: 5px;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
+
 #escolha{
 	display: none;
 }
@@ -304,8 +307,195 @@ label{
 	border-radius:	50px;
 	width: 30px;
 	height: 30px;
+	background: none;
+	color: #bbb;
+	outline: none;
+}
+
+#te,
+#em,
+#loct,
+#loct1{
+	width: 35px;
+	height: 35px;
+}
+
+#telel{
+	display: flex;
+	position: relative;
+	bottom: 33px;
+	left: 40px;
+	
+}
+
+#emass{
+	display: flex;
+	position: relative;
+	bottom: 33px;
+	left: 40px;
+}
+
+#emai{
+	position: relative;
+	bottom: 15px;
+	left: 4px;
+}
+.conts{
+	border-color: black;
+	border: solid 2px;
+	height: 90px;
+	width: 224px;
+	align-items: center; 
+	margin-bottom: 10px;
+}
+
+#telefon{
+	margin-top: 5px;
+	margin-left: 4px;
+}
+
+#rua{
+	position: relative;
+	bottom: 30px;
+	left: 35px;
+}
+
+#bairro{
+	position: relative;
+	bottom: 30px;
+	left: 35px;
+}
+
+#brss{
+	margin-top: -20px;
+}
+
+#estr{
+	margin-top: 6px; 
+}
+
+#location{
+	border-color: black;
+	border: solid 2px;
+	height: 90px;
+	width: 224px;
+	align-items: center; 
+
+}
+
+#clac{
+	border: none;
+	background: #f44e4e;
+	color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin-top: -10px;
+	margin-bottom: 6px;
+	height: 20px;
+	width: 110px;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+}
+
+#mos_preco{
+	display: flex;
+	position: relative;
+	left: 50px;
+	top: 5px;
+}
+
+#nmr{
+	position: relative;
+	top: -16px;
+}
+
+#ind1{
+	display: flex;
+	flex-direction: column;
+}
+
+#entCont{
+	text-align: center;
+	margin-top: 50px; 
+}
+
+.envio,
+#lin{
+	display: flex;
+	flex-direction: column; 
+}
+
+.envio{
+	margin-top: 50px;
+}
+
+#lin{
+	width: 100%;
+}
+
+
+#nomeCont,
+#emailCont,
+#telCont{
+	margin-bottom: 20px;
+	border-bottom: solid 2px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-color: black;
+	width: 70%;
+	outline: none;
+}
+
+#msgCont{
+	margin-bottom: 20px;
+	border: solid 2px;
+	width: 70%;
+	height: 90px;
+}
+
+#nomeCont::-webkit-input-placeholder {
+  color: black;
+}
+#emailCont::-webkit-input-placeholder {
+  color: black;
+}
+#telCont::-webkit-input-placeholder {
+  color: black;
+}
+#msgCont::-webkit-input-placeholder {
+  color: black;
+
+}
+
+#enviaCont{
+	margin-bottom: 80px;
+	border: none;
 	background: black;
 	color: white;
+	width: 30%;
+	height: 50px;
+	font-size: 20px;
+	outline: none;
+}
+
+#contatos{
+	display: none;
+}
+
+
+@media screen and (min-width: 950px){
+	.infos{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.conts{
+		margin-right: -190px;
+	}
+
 }
 
 @media screen and (min-width: 610px){
@@ -353,7 +543,7 @@ label{
 	}
 
 	#inf{
-		width: 40%;
+		width: 30%;
 		left: 0;
 		right: 0;
 	}
@@ -373,6 +563,45 @@ label{
 
 	#linha{
 		width: 15%;
+	}
+
+	#telCont{
+		margin-left: 20px;
+	}
+
+	#lin{
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#nomeCont,
+	#emailCont,
+	#telCont,
+	#msgCont{
+		margin-bottom: 45px;
+		height: 22px;
+	}
+
+	#msgCont{
+		height: 150px;
+	}
+
+	#nomeCont::-webkit-input-placeholder {
+  		font-size: 22px;
+
+	}
+	#emailCont::-webkit-input-placeholder {
+  		font-size: 22px;
+
+	}
+	#telCont::-webkit-input-placeholder {
+  		font-size: 22px;
+
+	}
+	#msgCont::-webkit-input-placeholder {
+ 		font-size: 22px;
+
 	}
 
 }
