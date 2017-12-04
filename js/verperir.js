@@ -192,6 +192,7 @@ function abastece(x){
 		pedir.setAttribute("name","mandar");
 		pedir.setAttribute("id","btnn");
 		pedir.setAttribute("value","PEDIR");
+		pedir.setAttribute("onclick","mandar()")
 
 		var preco = document.createElement("p");
 		preco.setAttribute("id","mos_preco");
@@ -251,6 +252,23 @@ function fechar(x){
 		document.querySelector("#inf").innerHTML ="";
 	}else{
 		document.querySelector("#inf").style.display = "block";
+	}
+}
+
+
+function mandar(){
+	let quantds = document.querySelector("#nmr").value;
+
+	let nome = document.querySelector("#nm").value;
+
+	let emal = document.querySelector("#cpf").value;
+
+	let tel = document.querySelector("#tele").value;
+
+	if (!quantds,!nome,!tel) {
+		innerHTML = "Insira as Inforações";
+	}else{
+		innerHTML = nome+ " seu pedido foi enviado. \nApós o termino de seu pedido retornaremos um telefonema e enviaremos um email para que possa buscar em nossa Loja!!!";
 	}
 }
 
