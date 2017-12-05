@@ -268,7 +268,7 @@ function mandar(){
 	if (!quantds,!nome,!tel) {
 		alert("Insira as Inforações");
 	}else{
-		alert( nome+ " seu pedido foi enviado. \nApós o termino de seu pedido retornaremos um telefonema e enviaremos um email para que possa buscar em nossa Loja!!!");
+		alert( nome+ " seu pedido foi enviado. \nApós o termino de seu pedido retornaremos um telefonema e enviaremos um email para que você possa buscar em nossa Loja!!!");
 	}
 }
 
