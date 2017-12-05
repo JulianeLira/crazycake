@@ -522,6 +522,32 @@ label{
 
 
 
+footer{
+	background: #474747;
+	height: 70px;
+	margin-top: 50px;
+}
+
+#copy{
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: -7px;
+}
+
+#men{
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 7px; 
+}
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 950px){
@@ -539,6 +565,17 @@ label{
 
 
 @media screen and (min-width: 610px){
+
+	#copy{
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	#men{
+		text-align: center;
+		width: 30%;
+	}
+
 
 	#gif{
 		width: 30%;
