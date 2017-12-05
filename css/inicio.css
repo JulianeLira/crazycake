@@ -120,6 +120,7 @@ li{
 #menu{
 	display: none;
 }
+
 #clickimg,
 #foto{
 	width: 200px;
@@ -267,6 +268,8 @@ label{
 	height: 40%;
 }
 
+
+
 #sobre-pg{
 	text-align: justify;
 }
@@ -291,9 +294,6 @@ label{
 }
 
 #escolha{
-	display: none;
-}
-#sobre{
 	display: none;
 }
 
@@ -485,6 +485,44 @@ label{
 	display: none;
 }
 
+#loj{
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+#iloja{
+	width: 80%;
+	height: 80%;
+	display: flex;
+	margin-top: 30px;
+	border-radius: 6px;
+}
+
+#linha8{
+	background: #3d3c3c;
+	display: flex;
+	width: 25%;
+	height: 5px;
+	border-radius: 50px;
+	margin-top: 8px;
+}
+
+#desloja{
+	text-align: justify;
+	margin-top: 20px;
+}
+
+#gif{
+	display: flex;
+	margin-top: 15px;
+	width: 80%;
+	height: 80%;
+}
+
+
+
+
 
 @media screen and (min-width: 950px){
 	.infos{
@@ -496,9 +534,17 @@ label{
 		margin-right: -190px;
 	}
 
+
 }
 
+
 @media screen and (min-width: 610px){
+
+	#gif{
+		width: 30%;
+		height: 30%;
+		display: flex;
+	}
 	
 	#menu{
 		display: block;
@@ -508,6 +554,26 @@ label{
 		display: none;
 	}
 
+
+	#linha8{
+		width: 15%;
+	}
+
+	#iloja{
+		width: 40%;
+		height: 40%;
+		display: flex;
+		flex-direction: column;
+		margin-left: 180px;
+	}
+
+	#desloja{
+		width: 30%;
+		position: relative;
+		bottom: 220px;
+		left: 250px;
+		text-align: justify;
+	}
 
 	#lin2,
 	#lin3,
