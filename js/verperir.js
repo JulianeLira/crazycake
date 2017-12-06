@@ -256,7 +256,10 @@ function fechar(x){
 }
 
 
-function mandar(){
+function mandar(x){
+
+	let tipo = document.querySelector("#name").innerHTML;
+
 	let quantds = document.querySelector("#nmr").value;
 
 	let nome = document.querySelector("#nm").value;
@@ -265,10 +268,66 @@ function mandar(){
 
 	let tel = document.querySelector("#tele").value;
 
+	let ms = document.querySelector("#mos_preco").innerHTML;
+
 	if (!quantds,!nome,!tel) {
-		alert("Insira as Inforações");
+		let ind = document.querySelector("#insi").style.display = "block";
+
 	}else{
-		alert( nome+ " seu pedido foi enviado. \nApós o termino de seu pedido retornaremos um telefonema e enviaremos um email para que você possa buscar em nossa Loja!!!");
+		let ts = document.querySelector("#conf");
+		let pt1 = document.querySelector("#p1");
+		let pt2 = document.querySelector("#p2");
+		let pt3 = document.querySelector("#p3");
+		let pt5 = document.querySelector("#p5");
+		let pt4 = document.querySelector("#p4");
+		pt1.innerHTML = "Olá "+ nome +",";
+		pt2.innerHTML = "<b>Seu pedido:</b> " + tipo;
+		pt3.innerHTML = "<b>Quantidade:</b> " + quantds; 
+		pt5.innerHTML = "<b>Preço:</b> " +ms;
+		pt4.innerHTML = "Após o termino de seu pedido retornaremos um telefonema e enviaremos um email para que você possa buscar em nossa Loja!!!";
+		ts.style.display = "block";
+
+		
 	}
 }
 
+
+function xs(){
+	let ind = document.querySelector("#insi").style.display;
+	if (ind == "block") {
+		document.querySelector("#insi").style.display = "none";
+	}else{
+		let ind = document.querySelector("#insi").style.display = "block";
+	}
+}
+
+
+function xsi(){
+	let ind = document.querySelector("#conf").style.display;
+	if (ind == "block") {
+		document.querySelector("#conf").style.display = "none";
+	}else{
+		document.querySelector("#conf").style.display = "block";
+	}
+}
+
+function pedir(x){
+	let nomeb = document.querySelector("#name").innerHTML;
+	let quantia = document.querySelector("#nmr").value;
+	let preco = document.querySelector("#mos_preco").innerHTML;
+	let nome = document.querySelector("#nm").value;
+	let email = document.querySelector("#cpf").value;
+	let fone = document.querySelector("#tele").value;
+
+	let junta = [quantia + "&" + preco + "&" + nomeb + "&" + email + "&" + fone];
+	let mandar = sessionStorage.setItem("pedido", junta);
+
+	document.querySelector("#conf").style.display = "none";
+
+	const tmp = 1500;
+
+	let bs = document.querySelector("#prt").style.display = "block";
+
+	let inter = setInterval( function() { if (bs == "block") {document.querySelector("#prt").style.display = "none";}} , tmp);
+
+}

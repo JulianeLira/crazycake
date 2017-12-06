@@ -69,7 +69,7 @@ main{
 #nm-btn{
 	display: flex;
 	text-align: center;
-	font-size: 20px;
+	font-size: 12px;
 }
 
 nav{
@@ -161,7 +161,9 @@ li{
  	justify-content: center;
 }
 
-
+#card:hover{
+	transform: scale(1.1);
+}
 
 #inf{
 	display: none;
@@ -397,6 +399,7 @@ label{
 	align-items: center;
 	justify-content: center;
 	outline: none;
+	font-size: 10px;
 }
 
 #mos_preco{
@@ -520,7 +523,38 @@ label{
 	height: 80%;
 }
 
+#xs{
+	border: 0;
+	background: none;
+	outline: none;
+	flex-direction: row;
+	position: relative;
+	top: 20px;
+	left: 7px;
+	color: #ad1b1b;
+}
 
+#inc{
+	text-align: center;
+	color: white;
+}
+
+#cai{
+	width: 200px;
+	background: #f04e4e;
+	position:relative;
+	top: 30px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+#insi{
+	display: none;
+	position: fixed;
+	top: 2px;
+	left: 0;
+	right: 0;
+}
 
 footer{
 	background: #474747;
@@ -542,9 +576,85 @@ footer{
 	margin-top: 7px; 
 }
 
+#conf{
+	border-radius: 5px;
+	position: fixed;
+	background: #f04e4e;
+	width: 300px;
+	height: 260px;
+    left: 0;
+    right: 0;
+    top: 100px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
 
+#lis{
+	color: white;
+	position: relative;
+	top: -10px;
+}
 
+#p1,
+#p2,
+#p3,
+#p5,
+#p4{
+	text-align: left;
+	margin-left: 30px;
+	list-style: none; 
+}
+
+#xsi{
+	background: none;
+	color: #ad1b1b;
+	border: none;
+	margin-top: 5px;
+	margin-left: 5px;
+	outline: none;
+}
+
+#pront{
+	border: none;
+	color: white;
+	outline: none;
+	border-radius: 4px;
+	text-align: center;
+	background: #3f3f3f;
+	width: 90px;
+	height: 40px;
+	left: 0;
+	right: 0;
+	display: block;
+	position: relative;
+	left: 0;
+	right: 0;
+}
+
+#prt{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 230px;
+}
+
+#ls{
+	align-items: center;
+	text-align: center;
+	position: relative;
+	bottom: 37px;
+	color: white;
+}
+
+#bd{
+	display: block;
+	background: #f04e4e;
+	width: 230px;
+	height: 50px;
+	border-radius: 5px;
+}
 
 
 
@@ -565,6 +675,15 @@ footer{
 
 
 @media screen and (min-width: 610px){
+
+	#conf{
+		height: 230px;
+	}
+
+	#lis{
+		display: block;
+	}
+
 
 	#copy{
 		text-align: center;
@@ -706,5 +825,10 @@ footer{
  		font-size: 22px;
 
 	}
+
+	#nm-btn{
+		font-size: 25px;
+	}
+
 
 }
